@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <u><h1>JAVA FUNCTIONS </h1></u>
+    <p><b>Question 1</b><br>
+        creat a function with zero parameter having console statement.
+    </p>
+    <p><b>Ans</b><br><pre>
+        function dummy(){
+            console.log ("SK");
+         }
+         dummy();
+        </pre></p><br><hr>
+
+    <p><b>Question 2</b><br>
+        creat a function which take two value of parameter and print the sum of them as "Sum of 3 , 4 is 7"
+        </p>
+    <p><b>Ans</b><br><pre>
+        function add(a,b){
+            let sum =(a+b);
+            console.log ("sum of"+a, b + "is" +sum);
+         }
+         add(3,4);
+            </pre></p><br><hr>
+
+    <p><b>Question 3</b><br>
+        creat a arrow function.
+            </p>
+        
+    <p><b>Ans</b><br><pre>
+        let arrow = () => console.log('Hello');
+        arrow();
+        </pre></p><br><hr>
+
+    <p><b>Question 4</b><br>
+        Print output
+        <pre>
+           var x = 21;
+           var girl = function (){
+           console.log(x);
+           var x = 20;
+           };
+           girl()
+        </pre>
+        </p>
+
+    <p><b>Ans</b><br>
+        output: undefined
+        </p><br><hr>
+
+    <p><b>Question 5</b><br>
+        Print output
+        <pre>
+            var x = 21;
+            girl();
+            console.log(x);
+            function girl(){
+            console.log(x);
+            var x = 20;
+            };
+
+        </pre>
+        </p>
+
+    <p><b>Ans</b><br>
+        output: undefined
+        21
+        </p><br><hr>
+
+    <p><b>Question 6</b><br>
+        Print output
+        <pre>
+            var x = 21;
+            a();
+            b();
+            function a(){
+            x = 20;  
+            console.log(x);
+            };
+            function b(){
+            x=40;
+            console.log(x);
+            };
+        </pre>
+    </p>
+
+<p><b>Ans</b><br>
+    Output: 20
+           40
+    </p><br><hr>
+
+<p><b>Question 7</b><br>
+    write a function that accepts all parameter n and returns factorial of n.
+</p>
+
+<p><b>Ans</b><br><pre>
+     function fact(num){
+        if(num == 0 || num == 1) {
+            return 1;
+        }
+        return num*factorial(num-1);
+     }
+</pre><br>
+
+    
+</body>
+</html>
